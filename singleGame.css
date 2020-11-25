@@ -1,0 +1,175 @@
+/* singleGame CSS */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #ffeeaf;
+}
+
+header {
+	background-color: white;
+	text-align: center;
+	padding: 60px 0;
+}
+
+main {
+	min-height: 800px;
+	min-width: 800px;
+	margin: 0 auto;
+}
+
+#scoreboard {
+	background-color: greenyellow;
+	text-align: center;
+	border: 2px dotted red;
+	border-right: none;
+	border-left: none;
+	padding: 30px 0;
+	margin-bottom: 30px;
+}
+
+#tileDisplay {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+#tileCol {
+	background-color: #fdf;
+	display: flex;
+	flex-direction: row;
+}
+
+.tile {
+	min-height: 120px;
+	min-width: 120px;
+	border: 1px solid red;
+}
+
+.empty {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
+	border: 3px double black;
+	background-color: orange;
+	background-image: url(pj_masks_logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	overflow: hidden;
+}
+
+.empty p {
+	box-sizing: border-box;
+}
+
+/* This are the different characters we have to pair */
+.catboy {
+	background-image: url(pj-wings.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.owlette {
+	background: url(character-owlette.png) no-repeat;
+	background-size: cover;
+}
+
+.gekko {
+	background: url(character-gekko.png) no-repeat;
+	background-size: cover;
+}
+
+.romeo {
+	background: url(character-romeo.png) no-repeat;
+	background-size: cover;
+}
+
+.lunagirl {
+	background: url(character-luna-girl.png) no-repeat;
+	background-size: cover;
+}
+
+.nightninja {
+	background: url(character-night-ninja.png) no-repeat;
+	background-size: cover;
+}
+
+.pjrobot {
+	background: url(character-pj-robot.png) no-repeat;
+	background-size: cover;
+}
+
+.wolfykids {
+	background: url(character-wolfy-kids.png) no-repeat;
+	background-size: cover;
+}
+
+.anyu {
+	background: url(character-anyu.png) no-repeat;
+	background-size: cover;
+}
+
+.motsuki {
+	background: url(character-motsuki.png) no-repeat;
+	background-size: cover;
+}
+
+.splatmonster {
+	background: url(character-splat-monster.png) no-repeat;
+	background-size: cover;
+}
+
+.armadylan {
+	background: url(character-armadylan.png) no-repeat;
+	background-size: cover;
+}
+
+/* Classes for game development */
+.revealed {
+	
+}
+
+.unrevealed {
+	background-color: #9ffd9f;
+	background-image: url(pj_masks_logo.png);
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.selected {
+
+}
+
+.correct {
+	pointer-events: none;
+	filter: grayscale(50%);
+	background-color: lightgrey;
+}
+
+.clickGetter {
+	pointer-events: none;
+}
+
+.winDiv {
+	background-color: antiquewhite;
+	border-radius: 10px;
+	position: fixed;
+	left: 40%;
+	top: 40%;
+	height: 20%;
+	width: 20%;
+	font-size: 20px;
+	text-align: center;
+	padding: 20px;
+}
