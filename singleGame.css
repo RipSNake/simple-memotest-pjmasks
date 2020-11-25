@@ -60,7 +60,7 @@ main {
 	box-sizing: border-box;
 	border: 3px double black;
 	background-color: orange;
-	background-image: url(pj_masks_logo.png);
+	background-image: url(images/pj_masks_logo.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -74,63 +74,63 @@ main {
 
 /* This are the different characters we have to pair */
 .catboy {
-	background-image: url(pj-wings.jpg);
+	background-image: url(images/pj-wings.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .owlette {
-	background: url(character-owlette.png) no-repeat;
+	background: url(images/character-owlette.png) no-repeat;
 	background-size: cover;
 }
 
 .gekko {
-	background: url(character-gekko.png) no-repeat;
+	background: url(images/character-gekko.png) no-repeat;
 	background-size: cover;
 }
 
 .romeo {
-	background: url(character-romeo.png) no-repeat;
+	background: url(images/character-romeo.png) no-repeat;
 	background-size: cover;
 }
 
 .lunagirl {
-	background: url(character-luna-girl.png) no-repeat;
+	background: url(images/character-luna-girl.png) no-repeat;
 	background-size: cover;
 }
 
 .nightninja {
-	background: url(character-night-ninja.png) no-repeat;
+	background: url(images/character-night-ninja.png) no-repeat;
 	background-size: cover;
 }
 
 .pjrobot {
-	background: url(character-pj-robot.png) no-repeat;
+	background: url(images/character-pj-robot.png) no-repeat;
 	background-size: cover;
 }
 
 .wolfykids {
-	background: url(character-wolfy-kids.png) no-repeat;
+	background: url(images/character-wolfy-kids.png) no-repeat;
 	background-size: cover;
 }
 
 .anyu {
-	background: url(character-anyu.png) no-repeat;
+	background: url(images/character-anyu.png) no-repeat;
 	background-size: cover;
 }
 
 .motsuki {
-	background: url(character-motsuki.png) no-repeat;
+	background: url(images/character-motsuki.png) no-repeat;
 	background-size: cover;
 }
 
 .splatmonster {
-	background: url(character-splat-monster.png) no-repeat;
+	background: url(images/character-splat-monster.png) no-repeat;
 	background-size: cover;
 }
 
 .armadylan {
-	background: url(character-armadylan.png) no-repeat;
+	background: url(images/character-armadylan.png) no-repeat;
 	background-size: cover;
 }
 
