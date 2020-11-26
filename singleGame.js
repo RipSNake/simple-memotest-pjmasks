@@ -124,7 +124,7 @@ function sePuedeAtacar(){
 // Main variables
 const pairs = ['catboy','owlette','gekko','romeo','lunagirl','nightninja','pjrobot','wolfykids','anyu','motsuki','splatmonster','armadylan'];
 var score = 0;
-var time = new Date().getTime(); // Takes the actual time
+var time = Date.now(); // Takes the actual time
 var selected = [];
 var correct = 0;
 
@@ -236,9 +236,8 @@ function showScore(){
 // Refresh time on the scoreboard
 
 function showTimeElapsed(){
-	let elapsed = new Date().getTime();
-	time = (elapsed - time); // Turn ms into seconds
-	document.getElementById('time').innerHTML = time;
+	let elapsed =  Date.now();
+	document.getElementById('time').innerHTML = Math.floor((elapsed - time)/1000);
 }
 
 setInterval(showTimeElapsed,1000);
@@ -254,8 +253,7 @@ function reset(){
 	}
 	score = 0;
 	showScore();
-	time = 0;
-	showTimeElapsed();
+	time = Date.now();
 	shuffleTiles();
 }
 
