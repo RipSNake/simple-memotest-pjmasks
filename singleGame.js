@@ -121,6 +121,7 @@ function sePuedeAtacar(){
 }
 */
 /** MEMOTEST PJ MASKS **/
+
 // Main variables
 const pairs = ['catboy','owlette','gekko','romeo','lunagirl','nightninja','pjrobot','wolfykids','anyu','motsuki','splatmonster','armadylan'];
 var score = 0;
@@ -214,7 +215,7 @@ function hasWon(){
 
 		let main = document.getElementsByTagName('main');
 		main[0].appendChild(div);
-		btn.onclick = reset();
+		/*btn.onclick = reset();*/
 	}
 }
 /* Add event on click for every memotest tile */
@@ -260,3 +261,81 @@ function reset(){
 // Initiate the Game
 
 reset();
+
+
+// Locally Storaged High Scores
+/*
+	Locally Storage data is saved in name/value pairs always as a string
+	Convert them to another format if needed.
+*/
+function canStorage() {
+	if (typeof(Storage) !== "undefined") {
+		console.log("Web Storage Supported");
+		return true;
+	} else {
+		console.log("NO Web Storage Support");
+		return false;
+	}
+}
+
+function seeHighScores() {
+	console.log(localStore);
+}
+
+function addHighScore() {
+	localStorage.setItem("High Score ", score);
+}
+
+function clearHighScores() {
+	localStorage = "";
+}
+
+
+canStorage();
+
+
+
+
+
+
+/*
+
+// Only for node.js learning
+
+// Dependencies
+const fileSystem = require('fs'); // Modulo para escribir archivos
+
+// Read data RECOMMEND according to fs documentation
+function seeHighScores() {
+	fileSystem.open('./highScores.txt','r', (err, fd) => {
+		if(err) {
+			if(err.code === 'ENOENT') {
+				console.error('my file does not exist');
+				return;
+			}
+			throw err;
+		}
+
+		readMyData(fd);
+	})
+}
+
+
+// Using append File to add the new information to the end of the file
+function addHighScore(score) {
+	fileSystem.appendFile('./highScores.txt','data to append', (err) => {
+		if(err) {
+			throw err;
+		}
+		console.log('The "data to append" was appended to file!');
+	})
+}
+
+function clearHighScores() {
+	fileSystem.write("./highScores.txt","", (err) => {
+		if(err) {
+			console.log(err);
+		}
+	})
+}
+*/

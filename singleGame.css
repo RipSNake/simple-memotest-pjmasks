@@ -1,5 +1,10 @@
-/* singleGame CSS */
+/* PJMASKS MEMOTEST CSS */
 
+/*
+	#027bc4 Catboy 2 123 196
+	#29a63a Gekko	41 166 58
+	#e51b28 Owlette	229 27 40
+*/
 * {
 	margin: 0;
 	padding: 0;
@@ -7,13 +12,13 @@
 }
 
 body {
-	background: #ffeeaf;
+	background: #fff;
 }
 
 header {
 	background-color: white;
 	text-align: center;
-	padding: 60px 0;
+	padding: 5vh 0;
 }
 
 main {
@@ -23,13 +28,25 @@ main {
 }
 
 #scoreboard {
-	background-color: greenyellow;
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 5vh;
+	background-color: rgb(41,166,58);
 	text-align: center;
-	border: 2px dotted red;
+	border: 2px dotted rgba(229,27,40,.9);
 	border-right: none;
 	border-left: none;
 	padding: 30px 0;
 	margin-bottom: 30px;
+}
+
+#controls {
+	margin-top: 4vh;
+}
+
+.btn {
+	border: 1px solid black;
+	border-radius: 10px;
 }
 
 #tileDisplay {
@@ -38,19 +55,21 @@ main {
 	justify-content: center;
 	align-items: center;
 	max-width: 80%;
-	margin: 0 auto;
+	
 }
 
 #tileCol {
-	background-color: #fdf;
+	/*background-color: rgb(41,166,58);*/
 	display: flex;
 	flex-direction: row;
 }
 
 .tile {
-	min-height: 120px;
-	min-width: 120px;
-	border: 1px solid red;
+	min-height: 150px;
+	min-width: 150px;
+	border: 1px solid rgba(229,27,40,.9);
+	border-radius:2px;
+	margin: 2px;
 }
 
 .empty {
@@ -141,8 +160,8 @@ main {
 
 .unrevealed {
 	background-color: #9ffd9f;
-	background-image: url(images/pj_masks_logo.png);
-	background-size: 90%;
+	background-image: url(images/catboy-mask.png);
+	background-size: 60%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
