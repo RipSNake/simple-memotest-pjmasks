@@ -54,8 +54,6 @@ main {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	max-width: 80%;
-	
 }
 
 #tileCol {
